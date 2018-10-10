@@ -4,6 +4,6 @@ class App < Sinatra::Base
   
   get '/reversename/:name' do
     @name_reversed = params[:name].reverse 
-    
+    "#{@name_reversed}"
 
 end

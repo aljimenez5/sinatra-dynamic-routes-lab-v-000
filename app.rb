@@ -17,5 +17,7 @@ class App < Sinatra::Base
     "#{@num_phrase}"
   end
   
+  get 
+  
   
 end

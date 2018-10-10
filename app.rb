@@ -22,5 +22,6 @@ class App < Sinatra::Base
     "#{@words_join}"
   end
   
+  get ''
   
 end

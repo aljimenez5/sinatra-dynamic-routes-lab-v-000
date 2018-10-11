@@ -24,9 +24,12 @@ class App < Sinatra::Base
   
   get '/:operation/:number1/:number2' do
     @operation_string = params[:operation]
+    @first_number = params[:number1]
+    @second_number = params[:number2]
     add = "+"
     substract = "-"
     multiply = "*"
     divide = "/"
+    
   
 end

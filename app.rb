@@ -24,7 +24,7 @@ class App < Sinatra::Base
   
   get '/:operation/:number1/:number2' do
     @operation_get = params[:operation]
-    @first_number = params[:number1]
+    @first_number = params[:number1].to_i
     @second_number = params[:number2]
     @operations = {:add => "+", :substract => "-", :multiply => "*", :divide => "/"}
     @total = (@first_number.method(@operations[@operation_get.to_sym])).call(@second_number)

@@ -32,5 +32,6 @@ class App < Sinatra::Base
     divide = "/"
     @total = (@first_number.method(@operation_string)).call(@second_number)
     "#{@total}"
+  end
   
 end

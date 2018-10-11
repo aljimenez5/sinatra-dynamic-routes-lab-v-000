@@ -26,6 +26,7 @@ class App < Sinatra::Base
     @operation_string = params[:operation]
     @first_number = params[:number1]
     @second_number = params[:number2]
+    operands
     add = "+"
     substract = "-"
     multiply = "*"

@@ -30,6 +30,7 @@ class App < Sinatra::Base
     substract = "-"
     multiply = "*"
     divide = "/"
-    @total = 
+    @total = (@first_number.method(@operation_string)).call(@second_number)
+    "#{@total}"
   
 end

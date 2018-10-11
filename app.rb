@@ -26,7 +26,7 @@ class App < Sinatra::Base
     @operation_string = params[:operation]
     @first_number = params[:number1]
     @second_number = params[:number2]
-    @operations = {:add => "+", :substract => "-", :multiply = "*", :divide = "/"
+    @operations = {:add => "+", :substract => "-", :multiply = "*", :divide = "/"}
     @total = (@first_number.method(@operation_string)).call(@second_number)
     "#{@total}"
   end

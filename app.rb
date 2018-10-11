@@ -30,6 +30,6 @@ class App < Sinatra::Base
     substract = "-"
     multiply = "*"
     divide = "/"
-    
+    @total = 
   
 end

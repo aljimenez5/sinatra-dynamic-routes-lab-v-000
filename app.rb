@@ -23,12 +23,12 @@ class App < Sinatra::Base
   end
   
   get '/:operation/:number1/:number2' do
+    @operation = params[:operation]
+    @first_number = params[:number1]
+    @second_number = params[:number2]
     @operations = {:add => "+", :substract => "-", :multiply => "*", :divide => "/"}
     @total = (@first_number.method(@operations[@operation])).call(@second_number)
     "#{@total}"
   end
-  @operation = params[:operation]
-    @first_number = params[:number1]
-    @second_number = params[:number2]
   
 end
